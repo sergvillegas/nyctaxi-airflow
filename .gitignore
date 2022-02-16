@@ -19,5 +19,5 @@ projects/nyctaxi/out/*.json
 projects/nyctaxi/out/*.csv
 
 # Ignore parquet output
-tripdata/pq/*.parquet
+projects/nyctaxi/tripdata/pq/*.parquet
 
