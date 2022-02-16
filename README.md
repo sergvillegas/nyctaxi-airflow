@@ -16,13 +16,13 @@ Data pipeline that imports the TLC data sets and transforms the format to Parque
 
 6. Set up AIRFLOW_HOME in your project directory `export AIRFLOW_HOME="$(pwd)"`
 
-7. Initialise the Airflow database `airflow db init`
+7. Create an Airflow user `airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin`
 
-8. Start the Airflow webserver `airflow webserver -p 8081 -D`
+8. Initialise the Airflow database `airflow db init`
 
 9. Start the Airflow scheduler `airflow scheduler -D`
 
-10. Create an Airflow user `airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin`
+10. Start the Airflow webserver `airflow webserver -p 8081 -D`
 
 11. Go to `http://localhost:8081/tree?dag_id=nyctaxi`
 
