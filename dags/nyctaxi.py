@@ -6,9 +6,11 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 from datetime import datetime
 import logging
-
-
 from airflow.decorators import dag, task
+
+os.chdir(os.environ['AIRFLOW_HOME'])
+
+
 @dag(schedule_interval=None, start_date=datetime(2022, 2, 15), catchup=False, tags=['nyctaxi'])
 def nyctaxi():
 
