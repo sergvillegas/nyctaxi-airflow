@@ -36,7 +36,7 @@ Finally, it removes the .gitkeep files
 in `projects/nyctaxi/tripdata/csv/renamed/.gitkeep`, `projects/nyctaxi/tripdata/pq/.gitkeep`
 The purpose of these files was to let git create empty directories.
 
-The out folder `projects/nyctaxi/out/` contains the schema for the Parquet files and the results for this query:
+The out folder `projects/nyctaxi/out/` contains the results for this query:
 - The average distance driven by yellow and green taxis per hour
 
 The pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format
