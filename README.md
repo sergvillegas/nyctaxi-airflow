@@ -16,15 +16,13 @@ Data pipeline that imports the TLC data sets and transforms the format to Parque
 
 6. Set up AIRFLOW_HOME in your project directory `export AIRFLOW_HOME="$(pwd)"`
 
-7. Create an Airflow user `airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin`
+7. Initialise the Airflow database `airflow db init`
 
-8. Initialise the Airflow database `airflow db init`
+8. Start the Airflow scheduler `airflow scheduler -D`
 
-9. Start the Airflow scheduler `airflow scheduler -D`
+9. Unpause the DAG `airflow dags unpause nyctaxi`
 
-10. Unpause the DAG `airflow dags unpause nyctaxi`
-
-11. Trigger the DAG `airflow dags trigger nyctaxi`
+10. Trigger the DAG `airflow dags trigger nyctaxi`
 
 ## How It Works
 
