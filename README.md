@@ -22,11 +22,9 @@ Data pipeline that imports the TLC data sets and transforms the format to Parque
 
 9. Start the Airflow scheduler `airflow scheduler -D`
 
-10. Start the Airflow webserver `airflow webserver -p 8081 -D`
+10. Unpause the DAG `airflow dags unpause nyctaxi`
 
-11. Go to `http://localhost:8081/tree?dag_id=nyctaxi`
-
-12. Trigger the DAG
+11. Trigger the DAG `airflow dags trigger nyctaxi`
 
 ## How It Works
 
