@@ -27,7 +27,7 @@ Data pipeline that imports the TLC data sets and transforms the format to Parque
 ## How It Works
 
 On the first run, it will initialize with the default configurations which imports the TLC data sets 
-for “Yellow” and “Green” taxis starting for the last year.
+for “Yellow” and “Green” taxis starting from the last year.
 
 It will also create a config.csv file `projects/nyctaxi/config/config.csv` 
 config.csv will keep a record of the files it can't find and which it will need to look for on the next run.
