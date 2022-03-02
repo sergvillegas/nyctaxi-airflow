@@ -1,6 +1,7 @@
 # nyctaxi-airflow
 
-Data pipeline that imports the TLC data sets and transforms the format to Parquet
+Data pipeline that imports the TLC data sets, transforms the format to Parquet and calculates the average distance 
+driven by yellow and green taxis per hour
 
 ## Getting Started
 
@@ -32,10 +33,10 @@ for “Yellow” and “Green” taxis.
 It will also create a config.csv file `projects/nyctaxi/config/config.csv` to keep a record of the files it can't find 
 and which it will need to look for on the next run.
 
+The pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format.
+
 The out folder `projects/nyctaxi/out/` contains the results for this query:
 - The average distance driven by yellow and green taxis per hour
-
-And the pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format.
 
 ## Future Updates
 
