@@ -27,15 +27,15 @@ Data pipeline that imports the TLC data sets and transforms the format to Parque
 ## How It Works
 
 On the first run, it will initialize with the default configurations which imports the TLC data sets 
-for “Yellow” and “Green” taxis starting from the last year.
+for “Yellow” and “Green” taxis.
 
-It will also create a config.csv file `projects/nyctaxi/config/config.csv` 
-config.csv will keep a record of the files it can't find and which it will need to look for on the next run.
+It will also create a config.csv file `projects/nyctaxi/config/config.csv` to keep a record of the files it can't find 
+and which it will need to look for on the next run.
 
 The out folder `projects/nyctaxi/out/` contains the results for this query:
 - The average distance driven by yellow and green taxis per hour
 
-The pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format
+The pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format.
 
 ## Future Updates
 
