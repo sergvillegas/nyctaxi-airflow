@@ -35,7 +35,7 @@ and which it will need to look for on the next run.
 The out folder `projects/nyctaxi/out/` contains the results for this query:
 - The average distance driven by yellow and green taxis per hour
 
-The pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format.
+And the pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format.
 
 ## Future Updates
 
