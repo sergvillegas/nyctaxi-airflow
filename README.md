@@ -36,7 +36,8 @@ and which it will need to look for on the next run.
 The pq folder `projects/nyctaxi/tripdata/pq` contains the data in Parquet format.
 
 The out folder `projects/nyctaxi/out/` contains the results for this query:
-- The average distance driven by yellow and green taxis per hour
+- The average distance driven by yellow and green taxis per hour. To view the results on your browser, 
+type `streamlit run projects/nyctaxi/app.py` 
 
 ## Future Updates
 
